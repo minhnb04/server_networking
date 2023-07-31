@@ -1,0 +1,15 @@
+<tr>
+    <th scope="row"><%= i+1 %></th>
+    <td><%= planetary.title %></td>
+    <td><img style="width: 50px; height: 50px" src="<%= planetary.url %>"></td>
+    <td><%= planetary.date %></td>
+    <td class="align-middle text-center">
+        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-id="<%= planetary._id %>" data-bs-toggle="modal" data-bs-target="#editPlanetaryModal">
+            Edit
+        </a>
+        &#160
+        <a href="javascript:;" class="btn_delete_planetary text-secondary font-weight-bold text-xs text-danger" data-id="<%= planetary._id %>" data-bs-toggle="modal" data-bs-target="#deleteProductModal">
+            Delete
+        </a>
+    </td>
+</tr>
