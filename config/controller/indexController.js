@@ -92,7 +92,16 @@ class IndexController {
         .catch((error)=>{
             next(error)
         })
+    }
 
+    async getPlanetary(req, res, next) {
+        await Planetary.find()
+            .then((planetaries) => {
+                res.json(planetaries)
+            })
+            .catch((error) => {
+                next(error)
+            })
     }
 
 }

@@ -27,4 +27,7 @@ router.post('/deletePlanetary/:id', indexController.deletePlanetary);
 router.get('/search', indexController.searchPlanetary);
 
 
+router.get('/getPlanetary', indexController.getPlanetary);
+
+
 module.exports = router;
